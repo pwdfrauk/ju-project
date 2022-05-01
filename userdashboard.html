@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Jahangirnagar </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <!--  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- main style cssa -->
+    <link rel="stylesheet" type="text/css" href="golobal.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="dashboardsubmenu.css">
+    <link rel="stylesheet" type="text/css" href="userdashboard.css">
+  </head>
+  <body>
+     <section class="header bg-white ">
+      <div class="container">
+      <div class="row mt-2">
+        <!-- new adding  -->
+        <div class="col-2 col-md-4 pl-2 pl-md-0 pr-0">
+          <div class="row ">
+        <div class="col-md-3 pr-0">
+          <img class="logo-img" src="images/logo.png">
+        </div>
+        <div class="logo-text pl-1 pr-0 col-md-8 d-none d-md-block">
+                     <h6 class="color-blue mb-0">জাহাঙ্গীরনগর বিশ্ববিদ্যালয়</h6>
+                     <p class=" color-black mb-0 ">প্রথম বর্ষ স্নাতক (সম্মান) ২০২০-২০২১</p>
+                </div>
+      </div>
+    </div>
+    <!-- new adding change the div area  -->
+    <div class="col-10  col-md-8 pl-0 pr-0 ">
+      <div class="row ml-0 mr-0 mt-3">
+        <div class="main-nav-area col-md-11 col-xl-12 d-flex justify-content-end pl-0 pr-0">
+          <div class="main-nav-link col-md-8 pl-0 pr-0 ">
+                      <ul class="nav header-nav d-none d-md-flex">
+                        <!-- add active class for active nav  -->
+                          <li><a class="active  color-black" href="#">হোম</a></li>
+                          <li><a class=" color-black" href="#">ভর্তি পরীক্ষার ফলাফল</a></li>
+                          <li><a class=" color-black" href="#">আসন বিন্যাস</a></li>
+                          <!-- new adding dropdown on desktop  -->
+                           <li class="nav-item dropdown">
+                            <a onclick="desktopDropdownOne()" class=" color-black nav-link dropdown-toggle" href="#" id="navbarDropdown"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             প্রবেশপত্র ডাউনলোড
+                            </a>
+                            <div class="navbarDropdown1 dropdown-menu " aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">হোম</a>
+                              <a class="dropdown-item" href="#">আসন বিন্যাস</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">ভর্তি পরীক্ষার ফলাফল</a>
+                            </div>
+                          </li>
+                          <li><a class=" color-black" href="#">লিঙ্ক</a></li>
+                       </ul>
+                       <div  class="mobile-menu ">
+                       <div  class="overlay">
+                          <div id="mobilenav" class="overlay-content">
+                          <a  onclick="clossNav()" href="#">হোম</a>
+                          <a onclick="clossNav()"  href="#">ভর্তি পরীক্ষার ফলাফল</a>
+                          <a onclick="clossNav()"  href="#">আসন বিন্যাস</a>
+                          <a onclick="mobileMenuDropDown()"  href="#">প্রবেশপত্র ডাউনলোড <span class="color-white"><img class="" src="images/dropdown.png"></span></a>
+                            <div class="mobile-drop-down-menu ml-0">
+                              <a onclick="clossNav()"  href="#">হোম </a>
+                              <a onclick="clossNav()"  href="#">হোম two</a>
+                              <a onclick="clossNav()"  href="#">হোম three </a>
+                            </div>
+                          <a onclick="" href="#">লিঙ্ক</a>  
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="login-button">
+                    <div class="before-login-line"></div>
+                       <a class="bnt-blue ml-3" href="#">লগ আউট</a>
+                     <div class="afear-login-line"></div>
+                  </div>
+                  <!-- new adding -->
+                  <div class="mobile-menu-icon col-1 d-xl-none">
+                      <span onClick="openNav()"><img src="images/line-bar.png"></span>
+                  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+    <!-- dashboard sub nav   -->
+  <!--============  dashboard sub nav  ==============-->
+        <div class="dash-sub-nav-section">
+          <div class="container dash-sub-nav-container">
+            <div class="row">
+              <div class="col-md-2">
+                <div class="dash-sub-icon d-flex">
+                  <div class="icon-img">
+                    <img src="images/home-icon.png">
+                  </div>
+                  <div class="icon-text">
+                    <h2 class="color-white home-page-title-3">/ ভর্তির আবেদন </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-xl-10">
+                <div class="desh-step-nav">
+                  <!-- *************** Step Time Line Start -->
+                  <!-- step 1 -->
+                  <div class="single-step-nav">
+                    <div class="single-step-icon">
+                      <img class="main-icon" src="images/num1.png">
+                      <!-- add active calss for active icon -->
+                        <img class=" active step-nav-overlay bg-green-1 " src="images/trick-icon.png">
+                      </div>
+                      <div class="single-setp-info">
+                      <!-- add active calass for active text  -->
+                       <p class="form-tittle-4  active ">প্রাথমিক যোগ্যতা যাচাই <img src="images/line-icon.png"></p>
+                    </div>
+                  </div>
+                  <!-- step 2 -->
+                  <div class="single-step-nav">
+                    <div class="single-step-icon">
+                      <img class="main-icon" src="images/num2.png">
+                      <!-- add active calss for active icon -->
+                      <img class="step-nav-overlay bg-green-1 " src="images/trick-icon.png">
+                      </div>
+                      <div class="single-setp-info">
+                      <!-- add active calss for active icon -->
+                      <p class=" form-tittle-4 ">মোবাইল নম্বর যাচাই <img src="images/line-icon.png"> </p>
+                    </div>
+                  </div>
+                  <!-- step 3 -->
+                  <div class="single-step-nav">
+                    <div class="single-step-icon">
+                      <img class="main-icon" src="images/num3.png">
+                      <!-- add active calss for active icon -->
+                      <img class="step-nav-overlay bg-green-1 " src="images/trick-icon.png">
+                      </div>
+                      <div class="single-setp-info">
+                      <!-- add active calss for active icon -->
+                      <p class=" form-tittle-4 ">ফি প্রদান <img src="images/line-icon.png">  </p>
+                    </div>
+                  </div>
+                  <!-- step 4 -->
+                  <div class="single-step-nav">
+                    <div class="single-step-icon">
+                      <img class="main-icon" src="images/num4.png">
+                      <!-- add active calss for active icon -->
+                      <img class="step-nav-overlay bg-green-1 " src="images/trick-icon.png">
+                      </div>
+                      <div class="single-setp-info">
+                      <!-- add active calss for active icon -->
+                      <p class=" form-tittle-4 ">ছবি আপলোড <img src="images/line-icon.png">  </p>
+                    </div>
+                  </div>
+                  <!-- step 5 -->
+                  <div class="single-step-nav">
+                    <div class="single-step-icon">
+                      <img class="main-icon" src="images/num5.png">
+                      <!-- add active calss for active icon -->
+                      <img class="step-nav-overlay bg-green-1 " src="images/trick-icon.png">
+                      </div>
+                      <div class="single-setp-info">
+                      <!-- add active calss for active icon -->
+                      <p class=" form-tittle-4 ">প্রবেশপত্র ডাউনলোড <img src="images/line-icon.png"> </p>
+                    </div>
+                  </div>
+              <!-- *************** End Step Time Line Start -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <!-- =====  end dashboar sub nav section ============-->
+    <!-- =====  end dashboar sub nav section ============-->
+    <section class="dashbord-secton">
+      <div class="container">
+        <!-- headeing area -->
+        <div class="dash-heading-area d-flex justify-content-between mt-4 mb-4 ">
+          <div class="heading-tittle">
+            <!-- new adding replace the h2 class adding here  -->
+            <h2 class="page-tittle">আবেদনকারীর ড্যাশবোর্ড</h2>
+          </div>
+          <div class="dash-support-are">
+            <div class="support-text">
+              <a class="form-tittle-4  color-blue" href="#"><img src="images/headset_mic.png">সহায়তা কেন্দ্র</a>
+            </div>
+          </div>
+        </div>
+        <!-- dashboard main area -->
+        <!-- admition present condition -->
+        <div class="admition-condition-nav">
+            <div class="admition-nav-link d-flex ">
+              <div class="admition-active  admition-nav-link-present-condition">
+                <!-- add admition-active class for active -->
+                  <a class="mr-3 color-black" href="#">আবেদনের বর্তমান অবস্থা</a>
+              </div>
+              <div class="admition-nav-link-know-description">
+                 <!-- add admition-active  class for active -->
+                <a class="ml-3 color-black" href="#">বিস্তারিত তথ্য</a>
+              </div>
+            </div>
+            <hr class="mt-0 mb-3">
+        </div>
+      </div>
+      <!-- new adding add the alert -->
+      <div class="container" style="padding:0px 0px;">
+        <div class="alert alert-success" >
+            আপনার A ইউনিট এর ফি প্রদান সফলভাবে সম্পন্ন হয়েছে 
+            <button onclick="alertSuccessClose()" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+      </div>
+        <!-- profile area --> <!-- ** PROFILE LEFT SIDE AND RIGHT SIDE *** -->
+      <div class="container">
+        <div class="profile-dashboard">
+          <div class="row">
+            <div class="profile-left-side-area">
+              <!-- profile image -->
+              <!-- new adding replace the div area  -->
+              <div class="profile-area box-shadow info-box  bg-white">
+                <div class="profile-image">
+                  <img src="images/imag-avatar.png">
+                  <a class="btn-disabled">ছবি আপলোড করুন</a>
+                </div>
+                <div class="profile-info">
+                  <h2 class="form-tittle-2 text-center">মোঃ মেহেদী হাসান</h2>
+                  <h3 class="tittle-font-16 text-center">MD. MEHEDI HASSAN</h3>
+                  <!-- add class active for active -->
+                  <p class="form-tittle-4  text-center">স্বাক্ষর</p>
+                  <!-- add class active for active -->
+                  <img width="144" class="signature-image" src="images/signature-avatar.png">
+                  <a class="btn-disabled">স্বাক্ষর আপলোড করুন</a>
+                </div>
+              </div>
+            </div>
+            <div class="profile-right-side-area">
+              <!-- ============================
+               accordion 
+               ==============================-->
+              <div class="accordion">
+                <!-- ===========================
+                First Accordion 
+                ============================ -->
+                <!-- accordion top -->
+                <div class="accordion-top box-shadow ">
+                    <div class="Accordion-icon " onclick="accordionFun(); accordionBtnIcon()">
+                      <img class="accordion-button-icon" src="images/keyboard_arrow_down.png">
+                    </div>
+                    <!-- Accordion header tittle -->
+                    <div class="Accordion-tittle ">
+                      <h2 class="form-tittle-2">A ইউনিট</h2>
+                      <ul>
+                        <li>
+                          <!-- add active class for active -->
+                          <a  class=" form-tittle-4  color-black-op-5 " href="#">ফি প্রদান সম্পন্ন হয়নি</a></li>
+                        <li><img src="images/li-dot.png"></li>
+                        <li>
+                           <!-- add active class for active -->
+                          <a class="form-tittle-4  color-black-op-5 " href="#">বিস্তারিত</a></li>
+                      </ul>
+                    </div>
+                    <div class="accordion-amount">
+                      <p><span class="form-tittle-4  color-black-op-5 ">আবেদন ফি:</span> <span class="form-tittle-2 ml-2">৬০০ টাকা</span></p>
+                    </div>
+                    <div class="pay-fee-button">
+                      <a data-modal="modal-one" class="btn-primary" href="#">ছবি ও স্বাক্ষর আপলোড</a>
+                    </div>
+                </div>
+                <!-- =======================
+                First  Accordion Body 
+                =========================-->
+                <div class="pannel accordion-box accordion-body ">
+                    <!-- time line 1 -->
+                    <!-- add class  dot-overlay-active for active-->
+                    <div class="time-line-single-area dot-overlay-active">
+                      <!-- timeline-1 tittle -->
+                        <p class="">যোগ্যতা যাচাই</p>
+                        <div class="border-position">
+                            <div class="border-area">
+                               <div class="border-in"></div>
+                               <!-- add class dot-overlay-active  for active-->
+                               <div class="dot-overlay-active dot-overlay">
+                                  <div class="dot-color"></div>
+                               </div>
+                             </div>
+                            <div class="line-overlay fist-timeline-overlay"></div>
+                        </div>
+                        <div class="date-time">
+                           <span class="font-13">১০ এপ্রিল, ০৭:২৫ pm</span>
+                        </div>
+                    </div>
+                    <!-- timeline 2 -->
+                    <!-- add class  dot-overlay-active for active-->
+                      <div class="time-line-single-area  dot-overlay-active">
+                        <!-- timeline-2 tittle -->
+                        <p>মোবাইল নম্বর যাচাই</p>
+                        <div class="border-position">
+                            <div class="border-area">
+                               <div class="border-in"></div>
+                                <!-- add class dot-overlay-active  for active-->
+                                <div class="dot-overlay dot-overlay-active">
+                                  <div class="dot-color"></div>
+                               </div>
+                             </div>
+                            <div class="line-overlay"></div>
+                        </div>
+                        <div class="date-time">
+                           <span class="font-13">১০ এপ্রিল, ০৭:২৫ pm</span>
+                        </div>
+                    </div>
+                    <!-- timeline 3 -->
+                    <!-- add class  dot-overlay-active for active-->
+                       <div class="time-line-single-area">
+                        <!-- timeline-3 tittle -->
+                        <p>ফি প্রদান</p>
+                        <div class="border-position">
+                            <div class="border-area">
+                               <div class="border-in"></div>
+                                <!-- add class dot-overlay-active  for active-->
+                                <div class="dot-overlay">
+                                  <div class="dot-color"></div>
+                               </div>
+                             </div>
+                            <div class="line-overlay"></div>
+                        </div>
+                        <div class="date-time" class="date-time">
+                           <span class="font-13"></span>
+                        </div>
+                    </div>
+                    <!-- timeline 4 -->
+                    <!-- add class  dot-overlay-active for active-->
+                       <div class="time-line-single-area">
+                        <!-- timeline-4 tittle -->
+                        <p>ছবি ও স্বাক্ষর আপলোড</p>
+                        <div class="border-position">
+                            <div class="border-area">
+                               <div class="border-in"></div>
+                                <!-- add class dot-overlay-active  for active-->
+                                <div class="dot-overlay">
+                                  <div class="dot-color"></div>
+                               </div>
+                             </div>
+                            <div class="line-overlay"></div>
+                        </div>
+                        <div class="date-time" class="date-time">
+                           <span class="font-13"></span>
+                        </div>
+                    </div>
+                    <!-- timeline 5 -->
+                    <!-- add class  dot-overlay-active for active-->
+                       <div class="time-line-single-area">
+                        <!-- timeline-5 tittle -->
+                        <p>প্রবেশপত্র ডাউনলোড</p> 
+                        <div class="border-position">
+                            <div class="border-area">
+                               <div class="border-in"></div>
+                               <!-- add class  dot-overlay-active  active -->
+                                <div class="dot-overlay">
+                                  <div class="dot-color"></div>
+                               </div>
+                             </div>
+                            <div class=" line-overlay last-timeline-overlay"></div>
+                        </div>
+                        <div class="date-time">
+                           <span class="font-13"></span>
+                        </div>
+                    </div>
+                    <!-- ===============
+                    End Accordion body 
+                    =================== -->
+                </div>
+              </div>
+              <!-- ========================================
+              End First Accordion Step
+              =========================================== -->
+              <!-- ------------- Modla pop up  for Slelect language  --------------------------->
+                 <div class="modal" id="modal-one">
+                    <div class="pop-up-area">
+                        <div class="pop-up-container">
+                          <div class="px-3 py-2">
+                              <img class="modal-close-btn modal-exit" src="images/clear.png">
+                            <h2 class="page-tittle  color-blue text-center mt-5">ফি প্রদান (A ইউনিট)</h2>
+                              <p class=" form-tittle-4  text-center mt-2">মোট টাকার পরিমান</p>
+                              <p class="paying-amount font-60 text-center">৳ ৬০০</p>
+                          </div>
+                            <div class="payment-method-area">
+                              <div class="px-3">
+                                <p class="home-page-title-2  text-center pt-4 pb-2 mb-0">প্রশ্নপত্রের ভাষা</p>
+                                <p class=" text-center color-black-op-7 py-1 form-tittle-4">অনুগ্রহ করে যে ভাষার প্রশ্নপত্রে পরীক্ষায় অংশগ্রহণ <br> করতে চান সেটি নির্বাচন করুন</p>
+                                <div class="modal-input-radio text-center pb-4">
+                                  <div class="custom-control custom-radio custom-control-inline modal-radio">
+                                    <input type="radio" id="bangla" name="select-language" class="custom-control-input ">
+                                    <label class="custom-control-label tittle-font-16 " for="bangla">বাংলা</label>
+                                  </div>
+                                  <div class="custom-control custom-radio custom-control-inline modal-radio">
+                                    <input type="radio" id="english" name="select-language" class="custom-control-input  ">
+                                    <label class="custom-control-label tittle-font-16 " for="english">ইংলিশ</label>
+                                  </div>
+                                </div>
+                                 
+                                <div class="modal-button text-center pt-2 pb-5 d-flex justify-content-between">
+                                  <!-- add active class for active  -->
+                                  <a class="bnt-blue widht-45 modal-exit" href="#">বাতিল করুন</a>
+                                  <a data-modal="modal-two"  class="btn-primary widht-45  modal-exit" href="#">পরবর্তী</a>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            <!-- ----------------- Modal Pop Up for payment  ------------------------ -->
+                <div class="modal " id="modal-two"> <!--  id="modal-one" -->
+                    <div class="pop-up-area">
+                        <div class="pop-up-container">
+                          <div class="px-3 py-2">
+                              <img class="modal-close-btn modal-exit" src="images/clear.png">
+                            <h2 class="page-tittle  color-blue text-center mt-5">ফি প্রদান (A ইউনিট)</h2>
+                              <p class=" form-tittle-4  text-center mt-2">মোট টাকার পরিমান</p>
+                              <p class="paying-amount font-60 text-center">৳ ৬০০</p>
+                          </div>
+                            <div class="payment-method-area">
+                              <div class="px-3">
+                                <p class="form-tittle-4  text-center py-4 mb-0">ফি প্রদান এর মাধ্যম নির্বাচন করুন</p>
+                                  <div class="pyment-method-images">
+                                    <a href="#"><img src="images/bkash-image.png"></a>
+                                    <a href="#"><img src="images/nagad.png"></a>
+                                    <a href="#"> <img src="images/rocket-image.png"></a>
+                                  </div>
+                                <div class="modal-button">
+                                  <!-- add active class for active  -->
+                                  <a class="modal-payment-botton active" href="#">
+                                  সম্পন্ন করুন</a>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+               <!-- ===========================
+                Secound Accordion 
+                ============================ -->
+                 <div class="accordion">
+                <!-- Secound Accordion header -->
+                  <div class="accordion-top box-shadow ">
+                    <div class="accordion-icon2" onclick="accordionFun2(); accordionBtnIcon2()">
+                      <img class="accordion-button-icon2" src="images/keyboard_arrow_down.png">
+                    </div>
+                    <!-- Accordion header tittle -->
+                    <div class="Accordion-tittle ">
+                      <h2 class="form-tittle-2">B ইউনিট</h2>
+                      <ul>
+                        <li>
+                          <!-- add active class for active -->
+                          <a class=" form-tittle-4  color-black-op-5 " href="#">ফি প্রদান সম্পন্ন হয়নি</a></li>
+                        <li><img src="images/li-dot.png"></li>
+                        <li>
+                           <!-- add active class for active -->
+                          <a class="active form-tittle-4  color-black-op-5 " href="#">বিস্তারিত</a></li>
+                      </ul>
+                    </div>
+                    <div class="accordion-amount">
+                      <p><span class="form-tittle-4  color-black-op-5 ">আবেদন ফি:</span> <span class="form-tittle-2 ml-2">8০০ টাকা</span></p>
+                    </div>
+                    <div class="pay-fee-button">
+                      <a class="btn-primary" href="#">ফি প্রদান সম্পন্ন হয়নি</a>
+                    </div>
+                </div>
+                <!-- =======================
+                Secound  Accordion Body 
+                =========================-->
+                <div class="pannel2 accordion-box accordion-body2 ">
+                    <!-- time line 1 -->
+                    <!-- add class  dot-overlay-active for active-->
+                    <div class="time-line-single-area dot-overlay-active">
+                      <!-- timeline-1 tittle -->
+                        <p class="">যোগ্যতা যাচাই</p>
+                        <div class="border-position">
+                            <div class="border-area">
+                               <div class="border-in"></div>
+                               <!-- add class dot-overlay-active  for active-->
+                               <div class="dot-overlay-active dot-overlay">
+                                  <div class="dot-color"></div>
+                               </div>
+                             </div>
+                            <div class="line-overlay fist-timeline-overlay"></div>
+                        </div>
+                        <div class="date-time">
+                           <span class="font-13">১০ এপ্রিল, ০৭:২৫ pm</span>
+                        </div>
+                    </div>
+                    <!-- timeline 2 -->
+                    <!-- add class  dot-overlay-active for active-->
+                      <div class="time-line-single-area  dot-overlay-active">
+                        <!-- timeline-2 tittle -->
+                        <p>মোবাইল নম্বর যাচাই</p>
+                        <div class="border-position">
+                            <div class="border-area">
+                               <div class="border-in"></div>
+                                <!-- add class dot-overlay-active  for active-->
+                                <div class="dot-overlay dot-overlay-active">
+                                  <div class="dot-color"></div>
+                               </div>
+                             </div>
+                            <div class="line-overlay"></div>
+                        </div>
+                        <div class="date-time">
+                           <span class="font-13">১০ এপ্রিল, ০৭:২৫ pm</span>
+                        </div>
+                    </div>
+                    <!-- timeline 3 -->
+                    <!-- add class  dot-overlay-active for active-->
+                       <div class="time-line-single-area">
+                        <!-- timeline-3 tittle -->
+                        <p>ফি প্রদান</p>
+                        <div class="border-position">
+                            <div class="border-area">
+                               <div class="border-in"></div>
+                                <!-- add class dot-overlay-active  for active-->
+                                <div class="dot-overlay">
+                                  <div class="dot-color"></div>
+                               </div>
+                             </div>
+                            <div class="line-overlay"></div>
+                        </div>
+                        <div class="date-time" class="date-time">
+                           <span class="font-13"></span>
+                        </div>
+                    </div>
+                    <!-- timeline 4 -->
+                    <!-- add class  dot-overlay-active for active-->
+                       <div class="time-line-single-area">
+                        <!-- timeline-4 tittle -->
+                        <p>ছবি ও স্বাক্ষর আপলোড</p>
+                        <div class="border-position">
+                            <div class="border-area">
+                               <div class="border-in"></div>
+                                <!-- add class dot-overlay-active  for active-->
+                                <div class="dot-overlay">
+                                  <div class="dot-color"></div>
+                               </div>
+                             </div>
+                            <div class="line-overlay"></div>
+                        </div>
+                        <div class="date-time" class="date-time">
+                           <span class="font-13"></span>
+                        </div>
+                    </div>
+                    <!-- timeline 5 -->
+                    <!-- add class  dot-overlay-active for active-->
+                       <div class="time-line-single-area">
+                        <!-- timeline-5 tittle -->
+                        <p>প্রবেশপত্র ডাউনলোড</p> 
+                        <div class="border-position">
+                            <div class="border-area">
+                               <div class="border-in"></div>
+                               <!-- add class  dot-overlay-active  active -->
+                                <div class="dot-overlay">
+                                  <div class="dot-color"></div>
+                               </div>
+                             </div>
+                            <div class=" line-overlay last-timeline-overlay"></div>
+                        </div>
+                        <div class="date-time">
+                           <span class="font-13"></span>
+                        </div>
+                    </div>
+                    <!-- ===============
+                    End Secound Accordion body 
+                    =================== -->
+                </div>
+              </div><!--============= End Second Accordion ============== -->
+                <!-- ===========================
+                third Accordion Start
+                ============================ -->
+                 <div class="accordion">
+                <!--  third Accordion header -->
+                <div class="accordion-top box-shadow ">
+                    <div class="accordion-icon3" onclick="accordionFun3(); accordionBtnIcon3()">
+                      <img class="accordion-button-icon3" src="images/keyboard_arrow_down.png">
+                    </div>
+                    <!-- Accordion header tittle -->
+                    <div class="Accordion-tittle ">
+                      <h2 class="form-tittle-2">C ইউনিট</h2>
+                      <ul>
+                        <li>
+                          <!-- add active class for active -->
+                          <a class=" form-tittle-4  color-black-op-5 " href="#">ফি প্রদান সম্পন্ন হয়নি</a></li>
+                        <li><img src="images/li-dot.png"></li>
+                        <li>
+                           <!-- add active class for active -->
+                          <a class="form-tittle-4  color-black-op-5 " href="#">বিস্তারিত</a></li>
+                      </ul>
+                    </div>
+                    <div class="accordion-amount">
+                      <p><span class="form-tittle-4  color-black-op-5 ">আবেদন ফি:</span> <span class="form-tittle-2 ml-2">8০০ টাকা</span></p>
+                    </div>
+                    <div class="pay-fee-button">
+                      <a class="btn-primary" href="#">ফি প্রদান করুন</a>
+                    </div>
+                </div>
+                <!-- =======================
+                 third  Accordion Body 
+                =========================-->
+                <div class="pannel3 accordion-box accordion-body3 ">
+                    <!-- time line 1 -->
+                    <!-- add class  dot-overlay-active for active-->
+                    <div class="time-line-single-area dot-overlay-active" >
+                      <!-- timeline-1 tittle -->
+                        <p class="">যোগ্যতা যাচাই</p>
+                        <div class="border-position">
+                            <div class="border-area">
+                               <div class="border-in"></div>
+                               <!-- add class dot-overlay-active  for active-->
+                               <div class="dot-overlay-active dot-overlay">
+                                  <div class="dot-color"></div>
+                               </div>
+                             </div>
+                            <div class="line-overlay fist-timeline-overlay"></div>
+                        </div>
+                        <div class="date-time">
+                           <span class="font-13">১০ এপ্রিল, ০৭:২৫ pm</span>
+                        </div>
+                    </div>
+                    <!-- timeline 2 -->
+                    <!-- add class  dot-overlay-active for active-->
+                      <div class="time-line-single-area  dot-overlay-active">
+                        <!-- timeline-2 tittle -->
+                        <p>মোবাইল নম্বর যাচাই</p>
+                        <div class="border-position">
+                            <div class="border-area">
+                               <div class="border-in"></div>
+                                <!-- add class dot-overlay-active  for active-->
+                                <div class="dot-overlay dot-overlay-active">
+                                  <div class="dot-color"></div>
+                               </div>
+                             </div>
+                            <div class="line-overlay"></div>
+                        </div>
+                        <div class="date-time">
+                           <span class="font-13">১০ এপ্রিল, ০৭:২৫ pm</span>
+                        </div>
+                    </div>
+                    <!-- timeline 3 -->
+                    <!-- add class  dot-overlay-active for active-->
+                       <div class="time-line-single-area">
+                        <!-- timeline-3 tittle -->
+                        <p>ফি প্রদান</p>
+                        <div class="border-position">
+                            <div class="border-area">
+                               <div class="border-in"></div>
+                                <!-- add class dot-overlay-active  for active-->
+                                <div class="dot-overlay">
+                                  <div class="dot-color"></div>
+                               </div>
+                             </div>
+                            <div class="line-overlay"></div>
+                        </div>
+                        <div class="date-time" class="date-time">
+                           <span class="font-13"></span>
+                        </div>
+                    </div>
+                    <!-- timeline 4 -->
+                    <!-- add class  dot-overlay-active for active-->
+                       <div class="time-line-single-area">
+                        <!-- timeline-4 tittle -->
+                        <p>ছবি ও স্বাক্ষর আপলোড</p>
+                        <div class="border-position">
+                            <div class="border-area">
+                               <div class="border-in"></div>
+                                <!-- add class dot-overlay-active  for active-->
+                                <div class="dot-overlay">
+                                  <div class="dot-color"></div>
+                               </div>
+                             </div>
+                            <div class="line-overlay"></div>
+                        </div>
+                        <div class="date-time" class="date-time">
+                           <span class="font-13"></span>
+                        </div>
+                    </div>
+                    <!-- timeline 5 -->
+                    <!-- add class  dot-overlay-active for active-->
+                       <div class="time-line-single-area">
+                        <!-- timeline-5 tittle -->
+                        <p>প্রবেশপত্র ডাউনলোড</p> 
+                        <div class="border-position">
+                            <div class="border-area">
+                               <div class="border-in"></div>
+                               <!-- add class  dot-overlay-active  active -->
+                                <div class="dot-overlay">
+                                  <div class="dot-color"></div>
+                               </div>
+                             </div>
+                            <div class=" line-overlay last-timeline-overlay"></div>
+                        </div>
+                        <div class="date-time">
+                           <span class="font-13"></span>
+                        </div>
+                    </div>
+                    <!-- ===============
+                    End Secound Accordion body 
+                    =================== -->
+                </div>
+              </div>
+                <!-- ============= third Accordion ============= -->
+
+                  <!--end accordion   -->
+                    <!-- stert accordion body -->
+                    <!-- end accoordin body -->
+                  </div>
+                  <!--end accordion   -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     <!-- new add adding all the new script to replace the old one  -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

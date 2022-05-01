@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Jahangirnagar </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <!--  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- main style cssa -->
+    <link rel="stylesheet" type="text/css" href="golobal.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body> 
+  <section class="header bg-white ">
+      <div class="container">
+      <div class="row mt-2">
+        <!-- new adding  -->
+        <div class="col-2 col-md-4 pl-2 pl-md-0 pr-0">
+          <div class="row ">
+        <div class="col-md-3 col-xl-2 mr-xl-2 pr-0">
+          <img class="logo-img" src="images/logo.png">
+        </div>
+        <div class="logo-text pl-1 pr-0 col-md-8 d-none d-md-block">
+                     <h6 class="color-blue mb-0">জাহাঙ্গীরনগর বিশ্ববিদ্যালয়</h6>
+                     <p class=" color-black mb-0 ">প্রথম বর্ষ স্নাতক (সম্মান) ২০২০-২০২১</p>
+                </div>
+      </div>
+    </div>
+    <!-- new adding change the div area  -->
+    <div class="col-10  col-md-8 pl-0 pr-0 ">
+      <div class="row ml-0 mr-0 mt-3">
+        <div class="main-nav-area col-md-11 col-xl-12 d-flex justify-content-end pl-0 pr-0">
+          <div class="main-nav-link col-md-8 pl-0 pr-0 ">
+                      <ul class="nav header-nav d-none d-md-flex">
+                        <!-- add active class for active nav  -->
+                          <li><a class="active  color-black" href="#">হোম</a></li>
+                          <li><a class=" color-black" href="#">ভর্তি পরীক্ষার ফলাফল</a></li>
+                           <li class="nav-item dropdown">
+                            <a onclick="desktopDropdownTwo()" class=" color-black nav-link dropdown-toggle" href="#" id="navbarDropdown"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             প্রবেশপত্র ডাউনলোড
+                            </a>
+                            <div class="navbarDropdown2 dropdown-menu " aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">হোম</a>
+                              <a class="dropdown-item" href="#">আসন বিন্যাস</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">ভর্তি পরীক্ষার ফলাফল</a>
+                            </div>
+                          </li>
+                          <!-- new adding dropdown on desktop  -->
+                           <li class="nav-item dropdown">
+                            <a onclick="desktopDropdownOne()" class=" color-black nav-link dropdown-toggle" href="#" id="navbarDropdown"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             প্রবেশপত্র ডাউনলোড
+                            </a>
+                            <div class="navbarDropdown1 dropdown-menu " aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">হোম</a>
+                              <a class="dropdown-item" href="#">আসন বিন্যাস</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">ভর্তি পরীক্ষার ফলাফল</a>
+                            </div>
+                          </li>
+                          <li><a class=" color-black" href="#">আসন বিন্যাস</a></li>
+                       </ul>
+                       <div  class="mobile-menu ">
+                       <div  class="overlay">
+                          <div id="mobilenav" class="overlay-content">
+                          <a  onclick="clossNav()" href="#">হোম</a>
+                          <a onclick="clossNav()"  href="#">ভর্তি পরীক্ষার ফলাফল</a>
+                          <a onclick="clossNav()"  href="#">আসন বিন্যাস</a>
+                          <a onclick="mobileMenuDropDown()"  href="#">প্রবেশপত্র ডাউনলোড <span class="color-white"><img class="" src="images/dropdown.png"></span></a>
+                            <div class="mobile-drop-down-menu ml-0">
+                              <a onclick="clossNav()"  href="#">হোম </a>
+                              <a onclick="clossNav()"  href="#">হোম two</a>
+                              <a onclick="clossNav()"  href="#">হোম three </a>
+                            </div>
+                          <a onclick="" href="#">লিঙ্ক</a>  
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="login-button">
+                    <div class="before-login-line"></div>
+                       <a  class="btn-primary " href="#">নতুন আবেদন</a>
+                       <a class="bnt-blue ml-3" href="#">লগইন</a>
+                     <div class="afear-login-line"></div>
+                  </div>
+                  <!-- new adding -->
+                  <div class="mobile-menu-icon col-1 d-xl-none">
+                      <span onClick="openNav()"><img src="images/line-bar.png"></span>
+                  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Hero Section area  -->
+    <section class="hero-section">
+      <div class="container">
+        <!-- hero area  -->
+        <div class="hero-section-area">
+          <div class="row" >
+            <!-- hero left side area  -->
+            <div class="hero-left-area">
+              <!-- hero main text  -->
+              <div class="info-text mt-4">
+                <h2 class="text-white font-30">ভর্তি পরীক্ষা ২০২০-২০২১</h2>
+                <p class="text-white font-18" >প্রথম বর্ষ স্নাতক (সম্মান)</p>
+                <a class="btn-primary hero-button" href="#">নতুন আবেদন</a>
+                <p class="step-for-apply font-14 text-center ">আবেদনের ধাপসমূহ</p>
+              </div>
+            </div>
+            <!-- hero right side area  -->
+            <!-- card area start -->
+            <div class="hero-right-side">
+              <div class="card-area">
+                  <!-- card 1  -->
+                  <div class="single-card row">
+                        <div class="number-overlay">
+                          <img src="images/num1.png">
+                        </div>
+                        <div class="card-box-with-icon">
+                            <div class="card-box mt-2">
+                                <div class="card-icon">
+                                    <img src="images/icon-check.png">
+                                  </div>
+                                  <div class="card-info">
+                                    <p class="px-1 font-18">প্রাথমিক যোগ্যতা যাচাই</p>
+                                  </div>
+                              </div> 
+                              <div class="right-arrow-icon">
+                                  <img src="images/right-arrow.png">
+                                  <img class="down-arrow-mobile" src="images/arrow_forward.png">
+                              </div>       
+                          </div>
+                      </div>
+                  <!-- card 2  -->
+                      <div class="single-card row">
+                          <div class="number-overlay">
+                            <img src="images/num2.png">
+                          </div>
+                          <div class="card-box-with-icon">
+                              <div class="card-box mt-2">
+                                <div class="card-icon">
+                                   <img src="images/icon-mobile.png">
+                                  </div>
+                                  <div class="card-info">
+                                    <p class="px-1">মোবাইল নম্বর যাচাই</p>
+                                  </div>
+                              </div> 
+                              <div class="right-arrow-icon">
+                                  <img src="images/right-arrow.png">
+                                  <img class="down-arrow-mobile" src="images/arrow_forward.png">
+                              </div>       
+                          </div>
+                    </div>
+                  <!-- card 3  -->
+                    <div class="single-card row">
+                        <div class="number-overlay">
+                          <img src="images/num3.png">
+                        </div>
+                        <div class="card-box-with-icon">
+                            <div class="card-box mt-2">
+                                <div class="card-icon">
+                                   <img src="images/icon-dolar.png">
+                                  </div>
+                                  <div class="card-info">
+                                    <p class="px-1">ফি প্রদান</p>
+                                  </div>
+                              </div> 
+                              <div class="right-arrow-icon">
+                                  <img src="images/right-arrow.png">
+                                  <img class="down-arrow-mobile" src="images/arrow_forward.png">
+                              </div>       
+                          </div>
+                      </div>
+                  <!-- card 4  -->
+                    <div class="single-card row">
+                        <div class="number-overlay">
+                          <img src="images/num4.png">
+                        </div>
+                        <div class="card-box-with-icon">
+                            <div class="card-box mt-2">
+                                <div class="card-icon">
+                                    <img src="images/icon-card.png">
+                                  </div>
+                                  <div class="card-info">
+                                      <p class="px-1">ছবি ও স্বাক্ষর আপলোড</p>
+                                  </div>
+                              </div> 
+                              <div class="right-arrow-icon">
+                                  <img src="images/right-arrow.png">
+                                  <img class="down-arrow-mobile" src="images/arrow_forward.png">
+                              </div>       
+                          </div>
+                      </div>
+                  <!-- card 5  -->
+                  <div class="single-card row">
+                        <div class="number-overlay">
+                          <img src="images/num5.png">
+                        </div>
+                        <div class="card-box-with-icon">
+                            <div class="card-box mt-2">
+                                <div class="card-icon">
+                                    <img src="images/icon-dwon-arrow.png">
+                                  </div>
+                                  <div class="card-info">
+                                    <p class="px-1">প্রবেশপত্র ডাউনলোড</p>
+                                  </div>
+                              </div>      
+                          </div>
+                      </div>
+              </div>
+              <!-- new adding line  -->
+              <p class="step-for-apply-desk d-none d-md-block form-tittle-4  text-left">আবেদনের ধাপসমূহ</p>
+              <!-- end adding line  -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Subsection -->
+      <div class="hero-sub-section">
+        <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="hero-sub-card d-flex justify-content-center align-items-center">
+                  <div class="sub-card-1 text-center">
+                    <p class="font-14 ">আবেদনপত্র গ্রহণ শুরুর তারিখ</p>
+                    <h5>০৮ এপ্রিল, ২০২১ সকাল ১০:০০ টা</h5>
+                    <!-- new adding replace the this p to the old p  -->
+                    <p class="font-14 color-white-op-5">আবেদনপত্র গ্রহণ শুরু হয়েছে</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="hero-sub-card d-flex justify-content-center align-items-center">
+                  <div class="sub-card-2 text-center">
+                    <p class="font-14">আবেদনপত্র গ্রহণের শেষ তারিখ</p>
+                    <h5>১৬ এপ্রিল, ২০২১ রাত ১১:৫৯ টা</h5>
+                      <!-- new adding replace the this p to the old p  -->
+                    <p class="time-counter font-14 color-white-op-5">সময় গণনা: <span id="days">14D</span> <span id="hours">10H</span><span id="minutes">25M</span><span id="seconds">27s</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="hero-sub-card d-flex justify-content-center align-items-center">
+                  <div class="sub-card-3 text-center">
+                    <p class="font-14">ভর্তি পরীক্ষা শুরু</p>
+                    <h5>০৮ জুন, ২০২১</h5>
+                      <!-- new adding replace the this p to the old p  -->
+                    <p class="font-14 color-white-op-5">বিস্তারিত</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="hero-sub-card d-flex justify-content-center align-items-center">
+                  <div class=" sub-card-4 text-center">
+                    <p class="font-14">ভর্তি পরীক্ষা শেষ</p>
+                    <h5>১৬ জুন, ২০২১</h5>
+                      <!-- new adding replace the this p to the old p  -->
+                    <p class="font-14 color-white-op-5">বিস্তারিত</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- information section -->
+    <!-- Information and Notice Board -->
+    <section class="info-and-notice-section">
+      <div class="container">
+        <div class="row info-and-area">
+          <!-- left side information -->
+          <div class="col-md-12 col-xl-8 ">
+            <div class="info-box  info-1 box-shadow-active ">
+              <div class="">
+                <p class="col-md-9 home-page-tittle-4 color-blue mb-0">২০২০-২০২১ শিক্ষাবর্ষে প্রথম বর্ষ স্নাতক (সন্মান) শ্রেণীতে ভর্তির গুরুত্বপূর্ণ নির্দেশনাবলী</p>
+              </div>
+              <!-- new adding  -->
+              <div class="dwonload-button mt-2 mt-md-0">
+                <a class="btn-primary  d-flex justify-content-center align-items-center" href="#"><i><img width="19" src="images/dwonload-icon.png"></i>ডাউনলোড</a>
+              </div>
+            </div>
+            <div class="info-box mt-4 mb-3 info-2 box-shadow-active ">
+              <div class="">
+                <p class="col-md-9 home-page-tittle-4 color-blue mb-0">২০২০-২০২১ শিক্ষাবর্ষে সমমান আবেদনের গুরুত্বপূর্ণ নির্দেশনাবলী</p>
+              </div>
+              <!-- new adding  -->
+              <div class="dwonload-button mt-2 mt-md-0">
+                <a class="btn-primary d-flex justify-content-center align-items-center" href="#"><i><img width="19" src="images/dwonload-icon.png"></i>ডাউনলোড</a>
+              </div>
+            </div>
+            <div class="info-box mt-4   info-3 box-shadow">
+              <p class="home-page-title-2 color-black">আবেদনের নির্দেশনাবলী</p>
+            </div>
+            <div class="info-box mt-4  info-4 box-shadow">
+              <p class="home-page-title-2 color-black">ছবি ও স্বাক্ষর আপলোডের নির্দেশনাবলী</p>
+            </div>
+          </div>
+          <!-- Right side bar information -->
+          <!-- new adding replace col-xl-4 to col-xl-3 -->
+          <div class="col-md-12 col-xl-4 ">
+           <!-- new adding  -->
+            <div class="info-box box-shadow right-side-bar-notice mt-4 mb-4 mb-md-0 mt-md-0">
+              <p class="text-center info-bottom-border">নোটিশ বোর্ড</p>
+              <!-- single notice -->
+              <span class="font-12">১৭ মার্চ, ২০২১</span>
+              <p class="info-bottom-border primary-1 home-page-tittle-4 color-blue">ক-ইউনিট ভর্তি নির্দেশিকা ২০২০-২১</p>
+              <!-- single notice -->
+              <span class="font-12">১৭ মার্চ, ২০২১</span>
+              <p class=" info-bottom-border primary-1 home-page-tittle-4 color-blue">ক-ইউনিট ভর্তি নির্দেশিকা ২০২০-২১</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end  Information and Notice Board -->
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-area">
+          <div class="row">
+            <div class="col-md-7 footer-img">
+              <div class="">
+                <img src="images/logo-img.jpg">
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="footer-right-column">
+                <h2 class="home-page-title-2 color-yellow">জরুরি প্রয়োজনে</h2>
+                <div class="social-link">
+                  <div class="icon-area d-flex justify-content-center align-items-center">
+                    <img src="images/phone-icon.png">
+                  </div>
+                  <div class="social-info">
+                    <h3 class="color-white home-page-title-3">০১৩১০৪২৬৪৪, ০১৩১০৪২৬৪৪৫</h3>
+                    <p class="color-white home-page-title-3">সকাল ১০:০০ টা থেকে সন্ধ্যা ০৭:০০ টা পর্যন্ত</p>
+                  </div>
+                </div>
+                <div class="social-link pb-3 pb-md-0">
+                  <div class="icon-area icon-area-2 d-flex justify-content-center align-items-center">
+                    <img src="images/email-icon.png">
+                  </div>
+                  <div class="social-info d-flex justify-content-center align-items-center">
+                    <h3 class="color-white font-size-13">support@ju-admission.org</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="bg-white">
+        <p class="footer-copyright py-2 text-center font-12 mb-2 mb-md-0">Managed by: Department of Computer Science and Engineering (CSE), Jahangirnagar University, Savar, Dhaka-1342, Bangladesh</p>
+      </div>
+    </footer>
+    <!-- new add adding all the new script to replace the old one  -->
+    <script src="js/main.js"></script>
+    <script src="js/counterDown.js"></script>
+</body>
+</html>

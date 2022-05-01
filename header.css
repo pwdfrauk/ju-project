@@ -1,0 +1,247 @@
+/* header css */
+.header {
+	height: 100px;
+	 position: -webkit-sticky;
+  	position: sticky;
+  	top: 0;
+  	z-index: 99;
+  	margin-top: -8px;
+}
+.main-nav-link ul {
+    justify-content: flex-end;
+    margin-right: 7px;
+}
+.main-nav-link ul li {
+margin:0px 10px;
+}
+.main-nav-link ul li a {
+	font-size: 13.5px;
+}
+.nav-link  {
+    padding:0px 0px !important;
+        margin-top: 3px !important; 
+}
+.logo-img {
+	margin-top:10px;
+}
+.logo-text  {
+	margin-right: 5px;
+	margin-top: 27px;
+}
+.logo-text h6{
+	font-size: 17.1px;
+}
+.logo-text p {
+	font-size: 13.6px;
+	width: 241px;
+}
+.font-14 {
+	font-size: 14px;
+}
+.header-nav {
+	margin-top: 18px;
+}
+.main-nav-link ul li a.active::after {
+	content: "";
+    display: block;
+    height: 5px;
+    background: #065DBC;
+    width: 100%;
+    margin-top:38px;
+}
+.main-nav-link ul li a.active {
+        color:#065DBC !important;
+}
+.before-login-line {
+	width: 2px;
+    height: 22px;
+    background: #111111;
+    position: absolute;
+    left: -20px;
+    top: 11px;
+    opacity: 0.3;
+}
+.afear-login-line {
+   width: 2px;
+    height: 22px;
+    background: #111111;
+    position: absolute;
+    right:  -9px;
+    top: 11px;
+    opacity: 0.3;
+    display: none;
+}
+.login-button {
+	position: relative;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.mobile-menu-icon {
+    display: none;
+}
+.navbarDropdown1 {
+    display: none;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 46% !important;
+}
+/*
+====================================
+Mobile menu
+=====================================
+*/
+.moibile-nav-button {
+	cursor:pointer;
+}
+.mobile-menu {
+}
+.overlay-content {
+	display: none;
+}
+.mobile-menu .mobile-menu-icon {
+    color: #fff;
+    font-size: 30px;
+    float: right;
+    margin-top: -38px;
+    
+}
+.mobile-menu .mobile-menu-icon:hover {
+    cursor: pointer;
+}
+.overlay {
+	background:#065DBC;
+    position:fixed;
+    top: 80px;
+    left: 0px;
+    z-index: 1;
+    overflow-x: hidden;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    width: 100%;
+    height: ;
+}
+.overlay-content {
+    position: relative;
+    width: 100%;
+    height:100%;
+    margin-left:10px;
+}
+
+.overlay-content a {
+    color: #fff;
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding:12px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1)
+}
+.overlay-content a:hover {
+    color: #fff;
+}
+.main-nav-link {
+	width: 0px;
+}
+.mobile-drop-down-menu {
+	background: #044D9D;
+}
+.mobile-drop-down-menu {
+	display: none;
+	height: 100%;
+}
+@media only screen and (min-width: 768px) and (max-width: 1176px) {
+    .header-nav {
+        display: none !important;
+    }
+    .mobile-menu-icon {
+    display: block;
+    }
+    .main-nav-link {
+        width: 0px;
+        position: absolute;
+    }
+    .afear-login-line {
+        display: block;
+    }
+    .before-login-line  {
+        display: none;
+    }
+    .mobile-menu-icon {
+    display: block;
+    margin-top: 13px;
+    margin-right: 36px;
+}
+}
+@media only screen and (min-width: 768px) and (max-width:992px) {
+    .logo-text h6 {
+    font-size: 16px !important;
+    }
+}
+@media (max-width: 768px) {
+   .main-nav-link {
+    width: 0px;
+    position: absolute;
+}
+    .mobile-menu-icon {
+    display: block;
+    margin-top: 13px;
+    margin-right: 36px;
+    }
+    .logo-text {
+        margin-left: 8px;
+    }
+    .logo-text h6 {
+        width: 300px;
+        font-size: 16px;
+        width: 189px;
+    }
+    .logo-text p  {
+        font-size: 13px;
+        width: 214px;
+    }
+    .header-nav {
+        display: none !important;
+    }
+    .before-login-line {
+        display: none;
+    }
+    .afear-login-line {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+	.mobile-menu {
+    display: block !important;
+	}
+	.header {
+    height: 80px;
+	}
+	.main-nav-area {
+		margin-top:-8px;
+	}
+	.logo-img {
+		width: 52px;
+		height: 60px;
+	}
+	.afear-login-line {
+		display: block;
+	}
+	.before-login-line  {
+		display: none;
+	}
+	.mobile-menu-icon {
+		margin-top: 13px;
+		margin-right: 36px;
+	}
+	.header-nav {
+		display: none;
+	}
+}
+@media only screen and (min-width: 350px) and (max-width:413px){
+   .login-button {
+    margin-left:0px !important;
+} 
+}

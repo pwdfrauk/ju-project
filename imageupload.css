@@ -1,0 +1,59 @@
+.image-avatar-area {
+	height: 96%;
+}
+@media (max-width: 767px) {
+	.image-upload-info-col {
+		width: 416px;
+		margin:auto;
+		margin-top: -13px;
+	}
+	.image-upload-avatar-col {
+		width: 416px;
+		margin:auto;
+		top: -9px;
+	}
+}
+@media (max-width: 767px)  {
+	.image-upload-section .container .row {
+		position: relative;
+		height: 840px;
+	}
+	.image-upload-btn {
+		position: absolute;
+    	top: 440px;
+    	z-index: 90;
+    	left: 28%;
+	}
+	.signature-upload-btn {
+		position: absolute;
+		left: 24%;
+    	top: 257px;
+    	z-index: 100;
+	}
+	.signature-upload-avatar {
+		position: absolute;
+		top:  496px;
+		z-index: 94;
+	}
+	.signature-upload-info {
+		position: absolute;
+		top: 532px;
+		height: 315px;
+		z-index: 91;
+		margin-top: -16px;
+		margin-right: 15px;
+	}
+	.image-upload-avatar-col {
+		height: 582px;
+		margin-top: -95px;
+	}
+	.image-avatar-area {
+		height: 360px !important;
+	}
+	.image-type-format  {
+		text-align:center;
+	}
+	.image-upload-area {
+		margin-top:-20px;
+	}
+}

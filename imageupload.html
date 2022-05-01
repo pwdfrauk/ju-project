@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+ <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Jahangirnagar </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <!--  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- main style cssa -->
+    <link rel="stylesheet" type="text/css" href="golobal.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="dashboardsubmenu.css">
+    <link rel="stylesheet" type="text/css" href="imageupload.css">
+</head>
+<body>
+  <section class="header bg-white ">
+      <div class="container">
+      <div class="row mt-2">
+        <!-- new adding  -->
+        <div class="col-2 col-md-4 pl-2 pl-md-0 pr-0">
+          <div class="row ">
+        <div class="col-md-3 pr-0">
+          <img class="logo-img" src="images/logo.png">
+        </div>
+        <div class="logo-text pl-1 pr-0 col-md-8 d-none d-md-block">
+                     <h6 class="color-blue mb-0">জাহাঙ্গীরনগর বিশ্ববিদ্যালয়</h6>
+                     <p class=" color-black mb-0 ">প্রথম বর্ষ স্নাতক (সম্মান) ২০২০-২০২১</p>
+                </div>
+      </div>
+    </div>
+    <!-- new adding change the div area  -->
+    <div class="col-10  col-md-8 pl-0 pr-0 ">
+      <div class="row ml-0 mr-0 mt-3">
+        <div class="main-nav-area col-md-11 col-xl-12 d-flex justify-content-end pl-0 pr-0">
+          <div class="main-nav-link col-md-8 pl-0 pr-0 ">
+                      <ul class="nav header-nav d-none d-md-flex">
+                        <!-- add active class for active nav  -->
+                          <li><a class="active  color-black" href="#">হোম</a></li>
+                          <li><a class=" color-black" href="#">ভর্তি পরীক্ষার ফলাফল</a></li>
+                          <li><a class=" color-black" href="#">আসন বিন্যাস</a></li>
+                          <!-- new adding dropdown on desktop  -->
+                           <li class="nav-item dropdown">
+                            <a onclick="desktopDropdownOne()" class=" color-black nav-link dropdown-toggle" href="#" id="navbarDropdown"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             প্রবেশপত্র ডাউনলোড
+                            </a>
+                            <div class="navbarDropdown1 dropdown-menu " aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">হোম</a>
+                              <a class="dropdown-item" href="#">আসন বিন্যাস</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">ভর্তি পরীক্ষার ফলাফল</a>
+                            </div>
+                          </li>
+                          <li><a class=" color-black" href="#">লিঙ্ক</a></li>
+                       </ul>
+                       <div  class="mobile-menu ">
+                       <div  class="overlay">
+                          <div id="mobilenav" class="overlay-content">
+                          <a  onclick="clossNav()" href="#">হোম</a>
+                          <a onclick="clossNav()"  href="#">ভর্তি পরীক্ষার ফলাফল</a>
+                          <a onclick="clossNav()"  href="#">আসন বিন্যাস</a>
+                          <a onclick="mobileMenuDropDown()"  href="#">প্রবেশপত্র ডাউনলোড <span class="color-white"><img class="" src="images/dropdown.png"></span></a>
+                            <div class="mobile-drop-down-menu ml-0">
+                              <a onclick="clossNav()"  href="#">হোম </a>
+                              <a onclick="clossNav()"  href="#">হোম two</a>
+                              <a onclick="clossNav()"  href="#">হোম three </a>
+                            </div>
+                          <a onclick="" href="#">লিঙ্ক</a>  
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="login-button">
+                    <div class="before-login-line"></div>
+                       <a  class="btn-primary " href="#">নতুন আবেদন</a>
+                       <a class="bnt-blue ml-3" href="#">লগইন</a>
+                     <div class="afear-login-line"></div>
+                  </div>
+                  <!-- new adding -->
+                  <div class="mobile-menu-icon col-1 d-xl-none">
+                      <span onClick="openNav()"><img src="images/line-bar.png"></span>
+                  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!--============  dashboard sub nav  ==============-->
+        <div class="dash-sub-nav-section">
+          <div class="container dash-sub-nav-container">
+            <div class="row">
+              <div class="col-md-2">
+                <div class="dash-sub-icon d-flex">
+                  <div class="icon-img">
+                    <img src="images/home-icon.png">
+                  </div>
+                  <div class="icon-text">
+                    <h2 class="color-white home-page-title-3">/ ভর্তির আবেদন </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-xl-10">
+                <div class="desh-step-nav">
+                  <!-- *************** Step Time Line Start -->
+                  <!-- step 1 -->
+                  <div class="single-step-nav">
+                    <div class="single-step-icon">
+                      <img class="main-icon" src="images/num1.png">
+                      <!-- add active calss for active icon -->
+                        <img class=" active step-nav-overlay bg-green-1 " src="images/trick-icon.png">
+                      </div>
+                      <div class="single-setp-info">
+                      <!-- add active calass for active text  -->
+                       <p class="font-14 active ">প্রাথমিক যোগ্যতা যাচাই <img src="images/line-icon.png"></p>
+                    </div>
+                  </div>
+                  <!-- step 2 -->
+                  <div class="single-step-nav">
+                    <div class="single-step-icon">
+                      <img class="main-icon" src="images/num2.png">
+                      <!-- add active calss for active icon -->
+                      <img class="step-nav-overlay bg-green-1 " src="images/trick-icon.png">
+                      </div>
+                      <div class="single-setp-info">
+                      <!-- add active calss for active icon -->
+                      <p class=" font-14">মোবাইল নম্বর যাচাই <img src="images/line-icon.png"> </p>
+                    </div>
+                  </div>
+                  <!-- step 3 -->
+                  <div class="single-step-nav">
+                    <div class="single-step-icon">
+                      <img class="main-icon" src="images/num3.png">
+                      <!-- add active calss for active icon -->
+                      <img class="step-nav-overlay bg-green-1 " src="images/trick-icon.png">
+                      </div>
+                      <div class="single-setp-info">
+                      <!-- add active calss for active icon -->
+                      <p class=" font-14">ফি প্রদান <img src="images/line-icon.png">  </p>
+                    </div>
+                  </div>
+                  <!-- step 4 -->
+                  <div class="single-step-nav">
+                    <div class="single-step-icon">
+                      <img class="main-icon" src="images/num4.png">
+                      <!-- add active calss for active icon -->
+                      <img class="step-nav-overlay bg-green-1 " src="images/trick-icon.png">
+                      </div>
+                      <div class="single-setp-info">
+                      <!-- add active calss for active icon -->
+                      <p class=" font-14">ছবি আপলোড <img src="images/line-icon.png">  </p>
+                    </div>
+                  </div>
+                  <!-- step 5 -->
+                  <div class="single-step-nav">
+                    <div class="single-step-icon">
+                      <img class="main-icon" src="images/num5.png">
+                      <!-- add active calss for active icon -->
+                      <img class="step-nav-overlay bg-green-1 " src="images/trick-icon.png">
+                      </div>
+                      <div class="single-setp-info">
+                      <!-- add active calss for active icon -->
+                      <p class=" font-14">প্রবেশপত্র ডাউনলোড <img src="images/line-icon.png"> </p>
+                    </div>
+                  </div>
+              <!-- *************** End Step Time Line Start -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <!-- =====  end dashboar sub nav section ============-->
+      <!-- ================= Aleart Box ================== -->
+      <section class="dashbord-secton">
+      <div class="container">
+        <!-- headeing area -->
+        <div class="dash-heading-area text-center text-md-left d-md-flex justify-content-between">
+          <div class="dash-heading-tittle">
+            <p class="font-22 mt-4">আবেদনকারীর ড্যাশবোর্ড</p>
+          </div>
+          <div class="dash-support-are">
+            <div class="support-text image-upload-support mb-4 mb-md-0 mt-1 mt-md-4">
+              <a class="font-14 primary-1" href="#"><img src="images/headset_mic.png">সহায়তা কেন্দ্র</a>
+            </div>
+          </div>
+        </div>
+         <p><img src="images/Vector.png"><a class="ml-2" href="#">ছবি ও স্বাক্ষর আপলোড</a></p>
+         <hr>
+      </div>
+      </section>
+      <!-- nea adding replace the image upload section  -->
+      <!-- image upload section -->
+      <section  class="image-upload-section mt-4">
+        <div class="container">
+            <div class="row d-flex">
+              <div class="col-md-8 col-xl-9 image-upload-info-col ">
+                <div class="image-upload-info upload-info info-box  box-shadow mb-0  mb-md-3">
+                  <h2 class="page-tittle color-black text-center text-md-left mb-2 ml-3">ছবি আপলোড</h2>
+                  <div class=" d-flex justify-content-between  align-items-center">
+                    <p class=" form-tittle-4 text-center text-md-left mt-2 color-black-op-7 col-12 col-md-8 ">প্রবেশপত্রের জন্য সদ্য তোলা এককপি পাসপোর্ট সাইজের রঙিন ছবি (৩০০ X ৩০০) পিক্সেল এবং ফাইল সাইজ ১০০ কিলোবাইটের বেশি নয়। </p>
+                    <div class="image-upload-btn  col-md-5 d-md-block">
+                      <a class="btn-primary btn-for-image-upload" href="#"><img class="pr-1" width="23" src="images/upload.png">আপলোড করুন</a>
+                    </div>
+                  </div>
+                  <p class="image-type-format file-info form-tittle-4 mt-0 mt-md-3 mt-md-0 mb-0 ml-3">ফাইল ফরমেট: .jpg or .jpeg</p>
+                </div>
+                <div class="signature-upload-info info-box  d-md-block box-shadow mb-3">
+                  <h2 class="page-tittle color-black text-center text-md-left mb-2 ml-3">স্বাক্ষর আপলোড</h2>
+                  <div class="upload-info-des d-flex justify-content-between  align-items-center">
+                    <p class="form-tittle-4 text-center text-md-left mt-2 color-black-op-7 col-12 col-md-8 ">প্রবেশপত্রের জন্য সদ্য তোলা এককপি পাসপোর্ট সাইজের রঙিন ছবি (৩০০ X ৩০০) পিক্সেল এবং ফাইল সাইজ ১০০ কিলোবাইটের বেশি নয়। </p>
+                    <div class="signature-upload-btn col-md-5">
+                      <a class="btn-primary btn-for-signature-upload " href="#"><img  width="23" class="pr-1" src="images/upload.png">আপলোড করুন</a>
+                    </div>
+                  </div>
+                    <p class="file-info image-type-format file-info form-tittle-4 mt-0 mt-md-3 mt-md-0 mb-0 ml-3">ফাইল ফরমেট: .jpg or .jpeg</p>
+                </div>
+              </div>
+              <div class="col-md-4 col-xl-3 image-upload-avatar-col">
+                <div class="image-avatar-area info-box  box-shadow d-flex flex-column align-items-center ">
+                  <h2 class="home-page-title-3  pb-1 text-center">প্রিভিউ</h2>
+                  <div class="image-upload-avatar">
+                    <img class="image-avatar" src="images/imag-avatar.png">
+                  </div>
+                  <!-- new adding comment out img tag for signature and btn are comment -->
+                  <div class="signature-upload-avatar mt-4 mb-2">
+                     <img class="signature-avatar" src="images/signature-avatar.png">
+                     <!-- <a class="btn-primary mb-2" href="#"><img class="pr-1" src="images/upload.png">আপলোড করুন</a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+             <div class="footer-button d-flex justify-content-between my-3">
+            <div>
+              <a class="bnt-blue " href="#">রিমুভ করুন</a>
+            </div>
+            <div>
+              <a class="bnt-blue " href="#">সাবমিট করুন</a>
+            </div>
+          </div>
+          <hr class="mt-0">
+          <div class="footer-button d-flex justify-content-between my-3">
+            <div>
+              <a class="bnt-blue " href="#">বাতিল করুন</a>
+            </div>
+            <div>
+              <a class="btn-transparent bg-gray-2" href="#">সাবমিট করুন</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- main js  -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

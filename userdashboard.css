@@ -1,0 +1,608 @@
+
+.admition-condition-nav .admition-nav-link .admition-active::after {
+    content: "";
+    display: block;
+    height: 5px;
+    background: #065DBC;
+    width: 100%;
+    margin-top:10px;
+    display: inline-block;
+}
+.admition-condition-nav .admition-nav-link .admition-active a {
+  color:#065DBC !important;
+}
+.admition-condition-nav .admition-nav-link a {
+  font-size: 14px !important;
+}
+.admition-nav-link .admition-nav-link-present-condition {
+    margin-bottom: -7px !important;
+  }
+/* User Dashboard */
+.profile-left-side-area {
+  width: 20%;
+}
+.profile-right-side-area {
+  width: 75%;
+  margin-left: 5%;
+}
+
+/*
+***************************
+profile image area
+************************** 
+*/
+.profile-area {
+  width: 240px;
+  min-height: 517px;
+}
+.profile-image {
+  position: relative;
+  margin: auto;
+  display: inherit;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 25px;
+}
+.profile-image a {
+  width: 90%;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+}
+.profile-area .profile-info p {
+  margin-top:20px;
+  margin-bottom: 25px;
+  opacity: .5;
+}
+.profile-area .profile-info p.active {
+  opacity: 1 !important;
+}
+.profile-area .profile-info a {
+  width: 90%;
+  display: inline-block;
+  margin-left: 5%;
+}
+.profile-area .profile-info a.active {
+  opacity: 1 !important;
+  color:#065DBC;
+}
+/*
+=======================================
+end profile image area
+========================================
+*/
+
+/*
+================================
+Accordion section Start
+=================================
+*/
+/* Accordion header  */
+.accordion {
+  margin-bottom: 20px; 
+}
+.accordion-button-icon {
+  -ms-transform: rotate(0deg); /* IE 9 */
+    transform: rotate(0deg);
+}
+.accordion-button-icon2 {
+  -ms-transform: rotate(180deg); /* IE 9 */
+    transform: rotate(180deg);
+}
+.accordion-button-icon3 {
+  -ms-transform: rotate(180deg); /* IE 9 */
+    transform: rotate(180deg);
+}
+.accordion-top {
+  position: relative;
+  display: flex;
+  border-radius: 8px;
+  background:#ffffff;
+  min-height: 96px;
+  padding:20px;
+  transition:0.4s;
+}
+.Accordion-icon,
+.accordion-icon2,
+.accordion-icon3 {
+  margin-top: 8px;
+  margin-left: 6px;
+  height:27px;
+  padding:5px;
+}
+.Accordion-tittle {
+  margin-left: 16px;
+}
+.Accordion-tittle ul {
+  list-style-type: none;
+  display: flex;
+
+}
+.Accordion-tittle ul li {
+  margin-right: 13px;
+}
+.Accordion-tittle ul li:nth-child(2) {
+  margin-top: -2px;
+}
+.Accordion-tittle ul li a {
+  text-decoration: none;
+}
+.Accordion-tittle ul li a.active {
+  color:219653;
+}
+.Accordion-tittle ul li:last-child a {
+  color:#065DBC !important;
+  text-decoration: underline;
+}
+
+.accordion-amount {
+  margin-left: 21%;
+  margin-top: 14px;
+}
+  .pay-fee-button {
+    margin-top:1% !important;
+}
+.signature-image {
+  display: none;
+}
+.play-button-right-side {
+    margin-left: 43%;
+    margin-top: 3px;
+}
+.pay-fee-button a {
+  position: absolute;
+  right: 20px;
+}
+.pannel {
+  overflow: hidden;
+}
+.accordion-button {
+  transition: 0.4s;
+}
+
+/*
+==========================
+accordion pannel 
+==========================
+*/
+/* accordion-body */
+.accordion-box {
+  width: 100%;
+  background: rgba(6, 93, 188, 0.05);
+  box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 8px 8px;
+  position: relative;
+  transition: 5s;
+}
+.accordion-box .time-line-single-area p {
+  font-size: 13.5px;
+}
+.accordion-box .time-line-single-area span {
+  font-size: 12px;
+  color:#86909A;
+}
+.accordion-body,
+.accordion-body2,
+.accordion-body3 {
+  display: flex;
+}
+.accordion-body2 {
+  display: none;
+}
+.accordion-body3 {
+  display: none;
+}
+.time-line-single-area {
+  width: 20%;
+  height: 152px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  opacity: .5;
+}
+.border-position {
+  position: relative;
+  overflow: none;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.time-line-single-area .border-area {
+  width: 100%;
+  position: relative;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-line-single-area .border-in {
+  width: 12px;
+  height: 12px;
+  border:2px solid #ffffff;
+  background: #BDBDBD;
+  border-radius:50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.dot-overlay {
+  width: 14px;
+  height: 14px;
+  background: #065DBC;
+  border:2px solid #ffffff;
+  border-radius:50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 3px #065DBC;
+  opacity: 0;
+}
+.dot-overlay-active {
+  opacity: 1 !important;
+}
+.time-line-single-area .line-overlay {
+    height: 2px;
+    width: 100%;
+    background: #065DBC !important;
+    position: absolute;
+    top:50%;
+    z-index: -1;
+    opacity: 0.1
+}
+ .fist-timeline-overlay {
+  width: 50%;
+  margin-left: 50%;
+}
+.time-line-single-area .last-timeline-overlay {
+  width: 50%;
+  margin-right: 50%;
+}
+.time-line-single-area .date-time  {
+  height: 24px;
+}
+/*
+======================
+Modal Pop Up
+======================
+*/
+.modal-input-radio .modal-radio .custom-control-label::before {
+    background-color: #ffffff;
+}
+.widht-45 {
+  width: 45%;
+}
+.modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    opacity: 1;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1a2d3ff5;
+}
+.open {
+  visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+ }
+  .close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    outline: none;
+    appearance: none;
+    background: none;
+    border: 0px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+.pop-up-area {
+  width: 410px;
+  background: #FFFFFF;
+  border-radius: 8px;
+    position: relative;
+}
+.modal-close-btn {
+  position: absolute;
+  top: 20PX;
+  right: 15PX;
+}
+.pop-up-container {}
+.payment-method-area {
+  background: #065dbc1a;
+}
+.pyment-method-images {
+  display: flex;
+    justify-content: space-around;
+}
+.pyment-method-images a {
+  display: inline-block;
+  text-align: center;
+  }
+.pyment-method-images a:focus {
+    border: 1px solid #065DBC;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.modal-button {}
+.modal-payment-botton {
+  font-size: 15px;
+  display: inline-block;
+  width: 100%;
+  background: #BDBDBD;
+  border-radius: 4px;
+  padding:12px;
+  text-align: center;
+  margin:20px 0px;
+  color:#ffffff;
+}
+.modal-payment-botton.active {
+  background: #065DBC !important;
+  color:#ffffff !important;
+}
+@media (max-width: 768px) {
+
+ 
+  .dash-support-are {
+    display: none;
+  }
+  .dash-heading-area {
+    display: block !important;
+  }
+  .dashbord-secton .dash-heading-area h2 {
+    text-align: center !important;
+    font-size: 22px;
+  }
+  .admition-nav-link {}
+  .admition-nav-link .admition-nav-link-present-condition,
+  .admition-nav-link .admition-nav-link-know-description {
+    width: 182px;
+  }
+  .admition-nav-link .admition-nav-link-present-condition a,
+  .admition-nav-link .admition-nav-link-know-description a {
+    font-size:15px;
+    padding:0px 0px !important;
+  }
+
+  .admition-nav-link .admition-nav-link-know-description {
+    text-align: right;
+  }
+  .admition-nav-link .admition-nav-link-know-description a {
+    font-size: 15px;
+  }
+  .admition-condition-nav .admition-nav-link .admition-active::after {
+    margin-top: 0px;
+  }
+  .profile-left-side-area {
+    width: 96%;
+    margin: auto;
+  }
+  .profile-area {
+    display: flex;
+    width: 100%;
+    min-height: 240px !important;
+    border: 8px;
+    margin-left: 0;
+  }
+  .profile-image {
+    margin:0px;
+    display: inherit;
+     width:200px;
+     margin-bottom:0px;
+  }
+  .profile-info {
+    width: 100%;
+    text-align: center;
+    margin-top:4%;
+  }
+  .profile-area .profile-info a {
+    width: auto;
+  }
+  .profile-info a {
+  
+  }
+  .profile-right-side-area {
+    width: 96%;
+    margin: auto;
+  }
+.accordion-top {
+    display:block;
+    height: auto;
+    padding: 20px;
+    margin-top: 20px;
+} 
+.pay-fee-button a {
+  position: relative !important;
+}
+.Accordion-icon,
+.accordion-icon2,
+.accordion-icon3 {
+  display: inline-block;
+}
+.Accordion-tittle {
+    display: inline-block;
+    border-bottom: 1px solid #00000017;
+    width: 250px;
+}
+.accordion-body {
+    display: block;
+    height: auto;
+    padding: 20px;
+    transition: 0.4s;
+    margin-bottom: 20px;
+}
+.accordion-amount {
+     margin-left:61px;
+     margin-top: ;
+    display:block;
+}
+.pay-fee-button {
+    margin-left: 247px;
+    margin-top: -50px;
+}
+/*accordion for tab */
+.accordion-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
+.accordion-body2 {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.accordion-body3 {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.time-line-single-area {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  height: 41px;
+}
+.time-line-single-area p {
+    display: inline-block;
+    font-size: 13px;
+    width: 170px;
+    text-align: right;
+}
+
+.time-line-single-area .date-time {
+    height: 35px;
+    display: inherit;
+}
+.time-line-single-area .date-time {
+  width: 150px;
+  text-align: left;
+}
+.time-line-single-area .date-time span {
+  font-size: 13px;
+
+}
+.border-position {
+    position: relative;
+    overflow: none;
+    width: 46px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+.fist-timeline-overlay {
+  margin-left: 0px !important;
+}
+.time-line-single-area .line-overlay {
+    height: 37px;
+    width: 2px;
+    background: #065DBC !important;
+    position: absolute;
+    top: 8px;
+    left: 18px;
+    z-index: -1;
+    opacity: 0.1;
+}
+.last-timeline-overlay {
+  display: none;
+}
+
+}
+@media only screen and (min-width: 768px) and (max-width:992px) {
+      .accordion-amount {
+        margin-left: 2%;
+}
+}
+@media only screen and (min-width: 568px) and (max-width:768px) {
+  .pay-fee-button {
+    position: absolute;
+    top:50px;
+    right:20px;
+}
+}
+@media (max-width: 576px) {
+ .profile-area {
+  padding:10px;
+  width: 100% !important;
+  min-height: 174px !important;
+}
+.profile-image {
+    width: 170px;
+    height: 150px;
+}
+.signature-image {
+  display: block;
+}
+.profile-image a  {
+    display: none;
+} 
+.profile-info {
+  text-align: left;
+  margin-top: 0px !important;
+}
+.profile-info a {
+  display: none !important;
+}
+.profile-info h2{
+  font-size: 18px;
+  text-align: left !important;
+  padding-top: 10px;
+}
+.profile-info h3{
+  font-size: 16px;
+  text-align: left !important;
+}
+.profile-info p{
+  font-size: 14px;
+  text-align: left !important;
+  margin-top: 20px !important;
+    margin-bottom: 8px !important;
+}
+.profile-info a{
+  font-size: 14px;
+  padding:4px 8px !important;
+  margin-left: 0px !important;
+}
+.accordion-top {
+  padding:5px !important;
+  padding-top: 15px !important;
+}
+.accordion-amount {
+     margin-left:18px;
+     margin-top: 0px;
+     display: inline; 
+}
+.pay-fee-button ,
+.accordion-amount p {
+  display: inline-block; !important;
+}
+.accordion-amount p,
+.accordion-amount span  {
+  font-size: 14px;
+}
+.pay-fee-button {
+  margin-left: 57px;
+  margin-top:0px;
+  padding-top: 10px;
+}
+.pay-fee-button a {
+    text-align: center;
+    font-size: 15px;
+    width: 135px;
+}
+}

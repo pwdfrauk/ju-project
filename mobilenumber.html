@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Jahangirnagar </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <!--  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- main style cssa -->
+    <link rel="stylesheet" type="text/css" href="golobal.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="dashboardsubmenu.css">
+    <link rel="stylesheet" type="text/css" href=".css">
+</head>
+<body>        <section class="header bg-white ">
+      <div class="container">
+      <div class="row mt-2">
+        <!-- new adding  -->
+        <div class="col-2 col-md-4 pl-2 pl-md-0 pr-0">
+          <div class="row ">
+        <div class="col-md-3 pr-0">
+          <img class="logo-img" src="images/logo.png">
+        </div>
+        <div class="logo-text pl-1 pr-0 col-md-8 d-none d-md-block">
+                     <h6 class="color-blue mb-0">জাহাঙ্গীরনগর বিশ্ববিদ্যালয়</h6>
+                     <p class=" color-black mb-0 ">প্রথম বর্ষ স্নাতক (সম্মান) ২০২০-২০২১</p>
+                </div>
+      </div>
+    </div>
+    <!-- new adding change the div area  -->
+    <div class="col-10  col-md-8 pl-0 pr-0 ">
+      <div class="row ml-0 mr-0 mt-3">
+        <div class="main-nav-area col-md-11 col-xl-12 d-flex justify-content-end pl-0 pr-0">
+          <div class="main-nav-link col-md-8 pl-0 pr-0 ">
+                      <ul class="nav header-nav d-none d-md-flex">
+                        <!-- add active class for active nav  -->
+                          <li><a class="active  color-black" href="#">হোম</a></li>
+                          <li><a class=" color-black" href="#">ভর্তি পরীক্ষার ফলাফল</a></li>
+                          <li><a class=" color-black" href="#">আসন বিন্যাস</a></li>
+                          <!-- new adding dropdown on desktop  -->
+                           <li class="nav-item dropdown">
+                            <a onclick="desktopDropdownOne()" class=" color-black nav-link dropdown-toggle" href="#" id="navbarDropdown"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             প্রবেশপত্র ডাউনলোড
+                            </a>
+                            <div class="navbarDropdown1 dropdown-menu " aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">হোম</a>
+                              <a class="dropdown-item" href="#">আসন বিন্যাস</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">ভর্তি পরীক্ষার ফলাফল</a>
+                            </div>
+                          </li>
+                          <li><a class=" color-black" href="#">লিঙ্ক</a></li>
+                       </ul>
+                       <div  class="mobile-menu ">
+                       <div  class="overlay">
+                          <div id="mobilenav" class="overlay-content">
+                          <a  onclick="clossNav()" href="#">হোম</a>
+                          <a onclick="clossNav()"  href="#">ভর্তি পরীক্ষার ফলাফল</a>
+                          <a onclick="clossNav()"  href="#">আসন বিন্যাস</a>
+                          <a onclick="mobileMenuDropDown()"  href="#">প্রবেশপত্র ডাউনলোড <span class="color-white"><img class="" src="images/dropdown.png"></span></a>
+                            <div class="mobile-drop-down-menu ml-0">
+                              <a onclick="clossNav()"  href="#">হোম </a>
+                              <a onclick="clossNav()"  href="#">হোম two</a>
+                              <a onclick="clossNav()"  href="#">হোম three </a>
+                            </div>
+                          <a onclick="" href="#">লিঙ্ক</a>  
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="login-button">
+                    <div class="before-login-line"></div>
+                       <a  class="btn-primary " href="#">নতুন আবেদন</a>
+                       <a class="bnt-blue ml-3" href="#">লগইন</a>
+                     <div class="afear-login-line"></div>
+                  </div>
+                  <!-- new adding -->
+                  <div class="mobile-menu-icon col-1 d-xl-none">
+                      <span onClick="openNav()"><img src="images/line-bar.png"></span>
+                  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+    <!-- dashboard sub nav   -->
+  <!--============  dashboard sub nav  ==============-->
+        <div class="dash-sub-nav-section">
+          <div class="container dash-sub-nav-container">
+            <div class="row">
+              <div class="col-md-2">
+                <div class="dash-sub-icon d-flex">
+                  <div class="icon-img">
+                    <img src="images/home-icon.png">
+                  </div>
+                  <div class="icon-text">
+                    <h2 class="color-white home-page-title-3">/ ভর্তির আবেদন </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-xl-10">
+                <div class="desh-step-nav">
+                  <!-- *************** Step Time Line Start -->
+                  <!-- step 1 -->
+                  <div class="single-step-nav">
+                    <div class="single-step-icon">
+                      <img class="main-icon" src="images/num1.png">
+                      <!-- add active calss for active icon -->
+                        <img class=" active step-nav-overlay bg-green-1 " src="images/trick-icon.png">
+                      </div>
+                      <div class="single-setp-info">
+                      <!-- add active calass for active text  -->
+                       <p class="form-tittle-4  active ">প্রাথমিক যোগ্যতা যাচাই <img src="images/line-icon.png"></p>
+                    </div>
+                  </div>
+                  <!-- step 2 -->
+                  <div class="single-step-nav">
+                    <div class="single-step-icon">
+                      <img class="main-icon" src="images/num2.png">
+                      <!-- add active calss for active icon -->
+                      <img class="step-nav-overlay bg-green-1 " src="images/trick-icon.png">
+                      </div>
+                      <div class="single-setp-info">
+                      <!-- add active calss for active icon -->
+                      <p class=" form-tittle-4 ">মোবাইল নম্বর যাচাই <img src="images/line-icon.png"> </p>
+                    </div>
+                  </div>
+                  <!-- step 3 -->
+                  <div class="single-step-nav">
+                    <div class="single-step-icon">
+                      <img class="main-icon" src="images/num3.png">
+                      <!-- add active calss for active icon -->
+                      <img class="step-nav-overlay bg-green-1 " src="images/trick-icon.png">
+                      </div>
+                      <div class="single-setp-info">
+                      <!-- add active calss for active icon -->
+                      <p class=" form-tittle-4 ">ফি প্রদান <img src="images/line-icon.png">  </p>
+                    </div>
+                  </div>
+                  <!-- step 4 -->
+                  <div class="single-step-nav">
+                    <div class="single-step-icon">
+                      <img class="main-icon" src="images/num4.png">
+                      <!-- add active calss for active icon -->
+                      <img class="step-nav-overlay bg-green-1 " src="images/trick-icon.png">
+                      </div>
+                      <div class="single-setp-info">
+                      <!-- add active calss for active icon -->
+                      <p class=" form-tittle-4 ">ছবি আপলোড <img src="images/line-icon.png">  </p>
+                    </div>
+                  </div>
+                  <!-- step 5 -->
+                  <div class="single-step-nav">
+                    <div class="single-step-icon">
+                      <img class="main-icon" src="images/num5.png">
+                      <!-- add active calss for active icon -->
+                      <img class="step-nav-overlay bg-green-1 " src="images/trick-icon.png">
+                      </div>
+                      <div class="single-setp-info">
+                      <!-- add active calss for active icon -->
+                      <p class=" form-tittle-4 ">প্রবেশপত্র ডাউনলোড <img src="images/line-icon.png"> </p>
+                    </div>
+                  </div>
+              <!-- *************** End Step Time Line Start -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <!-- =====  end dashboar sub nav section ============-->
+
+  <!--============  mobile number form  ==============-->
+  <section class="mob-verification-section  ">
+      <div class="container mob-ver-container d-flex justify-content-center">
+        <div class="verification-form-area tittle-width-500">
+              <h2 class="text-center page-tittle color-black pt-4 mt-3 tittle-width-500">আবেদনকারীর মোবাইল নম্বর যাচাই</h2>
+                <p class="subtittle after-tittle-line tittle-width-500 tittle-width-500 pb-2 text-center">এই মোবাইল নম্বরটি ভবিষ্যতে সকল প্রকার কার্যক্রমে ব্যবহৃত হবে সুতরাং মোবাইল নম্বরে প্রেরিত আপনার পাসওয়ার্ডটি সঠিকভাবে সংরক্ষণ করুন। </p>
+              <form class="grey-form">
+                <div class="form-group">
+                  <label for="mobile-number">মোবাইল নম্বর</label>
+                  <input type="text" class="form-control" id="mobile-number"  placeholder="মোবাইল নম্বর" required>
+                </div>
+                <button type="submit" class="btn-primary btn-fullwhidth ">নিশ্চিত করুন</button>
+              </form>
+          </div>
+        </div>
+    </section>
+     <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+.signup {
+		flex-direction: column !important;
+		position: relative;
+	}
+	.yellow-card {
+	position: absolute;
+    top: 35%;
+    right: 8%;
+	}
+@media only screen and (min-width: 1050px) and (max-width:1150px) {
+	.yellow-card {
+	 right: 6%;
+	}
+}
+@media only screen and (min-width: 992px) and (max-width:1050px) {
+	.yellow-card {
+	 right: 3%;
+	}
+}
+@media (max-width: 991px) {
+	.signup .yellow-card {
+	position: relative !important;
+	right: 0 !important;
+	border-radius: 8px;
+	width: 410px;
+	padding:20px 30px;
+	margin-left:0px !important;
+	}
+}
